@@ -4,6 +4,20 @@
 
 这是一个可自托管的开源 MVP。网页负责账户、微信绑定和提醒管理，后台负责解析、调度、投递和失败记录。生产环境请自行配置微信 iLink、数据库、AI 服务和运维告警；仓库不包含任何生产凭据或用户数据。
 
+## 界面预览
+
+### 用户首页
+
+![准点用户首页](docs/screenshots/tixing-new-landing-v2.png)
+
+### 管理员运营后台
+
+![准点管理员运营后台](docs/screenshots/tixing-production-admin-final.png)
+
+### 常见问题与产品说明
+
+![准点常见问题页面](docs/screenshots/tixing-full-section6.png)
+
 ## 安全配置
 
 ```bash
@@ -133,4 +147,3 @@ pnpm build
 ```
 
 生产构建固定使用 PostgreSQL 驱动进行编译，避免构建 worker 并发打开本地 PGlite 文件。
-
