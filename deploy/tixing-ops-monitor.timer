@@ -1,1 +1,11 @@
+[Unit]
+Description=Run Tixing Operations Monitor Every Two Minutes
 
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=2min
+AccuracySec=15s
+Persistent=true
+
+[Install]
+WantedBy=timers.target
