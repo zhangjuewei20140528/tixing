@@ -1,1 +1,10 @@
+[Unit]
+Description=Tixing Operations Monitor
+After=network-online.target docker.service
+Wants=network-online.target
 
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/tixing
+ExecStart=/usr/bin/python3 /opt/tixing/scripts/ops-monitor.py
